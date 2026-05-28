@@ -10,8 +10,8 @@ export const dockerConfig = `# This is a template for worker_config.
 # ========= container & image ===========
  
 # system_default_container_registry: "docker.io"
-# image_name_override: "gpustack/gpustack:dev"
-# image_repo: "gpustack/gpustack"
+# image_name_override: "6block/llmfabric:dev"
+# image_repo: "6block/llmfabric"
  
 # ========= service & networking ===========
  
@@ -54,8 +54,8 @@ export const kubernetesConfig = `# This is a template for worker_config.
 # ========= container & image ===========
  
 # system_default_container_registry: "docker.io"
-# image_name_override: "gpustack/gpustack:dev"
-# image_repo: "gpustack/gpustack"
+# image_name_override: "6block/llmfabric:dev"
+# image_repo: "6block/llmfabric"
  
 # ========= service & networking ===========
  
