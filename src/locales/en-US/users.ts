@@ -32,12 +32,12 @@ export default {
   'users.password.confirm.empty': 'Please confirm the new password.',
   'users.password.confirm.error': 'The two passwords entered do not match.',
   'users.login.title': 'Log in to',
-  'users.version.islatest': 'GPUStack {version} is the latest version',
-  'users.version.update': 'GPUStack {version} is available',
+  'users.version.islatest': 'LLMFabric {version} is the latest version',
+  'users.version.update': 'LLMFabric {version} is available',
   'users.settings.title': 'User Settings',
   'users.status.activate': 'Activate Account',
   'users.status.deactivate': 'Deactivate Account',
   'users.status.inactiveAccount': 'Inactive Account',
   'users.login.getInitialPassword':
-    'Run the following command on your GPUStack Server to retrieve the initial admin password.'
+    'Run the following command on your LLMFabric Server to retrieve the initial admin password.'
 };

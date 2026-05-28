@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 <span>&copy;</span>
                 <span> {new Date().getFullYear()}</span>
                 <Typography.Link
-                  href="https://gpustack.ai"
+                  href={externalLinks.site}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

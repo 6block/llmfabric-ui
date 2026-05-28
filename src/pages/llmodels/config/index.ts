@@ -401,8 +401,8 @@ export const getBackendParamsTips = (backend: string) => {
   if (backend === backendOptionsMap.llamaBox) {
     return {
       backend: 'llama-box',
-      releases: 'https://github.com/gpustack/llama-box/releases',
-      link: 'https://github.com/gpustack/llama-box?tab=readme-ov-file#usage',
+      releases: 'https://github.com/6block/llama-box/releases',
+      link: 'https://github.com/6block/llama-box?tab=readme-ov-file#usage',
       version: 'v0.0.140'
     };
   }
@@ -418,7 +418,7 @@ export const getBackendParamsTips = (backend: string) => {
     return {
       backend: 'Ascend MindIE',
       releases: '',
-      link: 'https://docs.gpustack.ai/latest/user-guide/built-in-inference-backends/?h=parameters+reference#parameters-reference_2',
+      link: 'https://docs.llmfabric.ai/latest/user-guide/built-in-inference-backends/?h=parameters+reference#parameters-reference_2',
       version: '1.0.0'
     };
   }
@@ -434,7 +434,7 @@ export const getBackendParamsTips = (backend: string) => {
 
   return {
     backend: 'vox-box',
-    releases: 'https://github.com/gpustack/vox-box/releases',
+    releases: 'https://github.com/6block/vox-box/releases',
     link: '',
     version: 'v0.0.13'
   };

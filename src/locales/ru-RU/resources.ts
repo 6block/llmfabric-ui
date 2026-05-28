@@ -50,7 +50,7 @@ export default {
   'resources.worker.container.supported': 'Только для Linux.',
   'resources.worker.current.version': 'Текущая версия: {version}',
   'resources.worker.driver.install':
-    'Установите <a href="https://docs.gpustack.ai/latest/installation/installation-requirements/" target="_blank">необходимые драйверы и библиотеки</a> перед установкой GPUStack.', // Translated
+    'Установите <a href="https://docs.llmfabric.ai/latest/installation/installation-requirements/" target="_blank">необходимые драйверы и библиотеки</a> перед установкой LLMFabric.', // Translated
   'resources.worker.select.command':
     'Выберите метку для генерации команды и скопируйте её.',
   'resources.worker.script.install': 'Установка скриптом',
@@ -86,7 +86,7 @@ export default {
     'Вставьте <span class="bold-text">Токен</span>.',
   'resources.register.worker.step7':
     'Нажмите <span class="bold-text">Перезапуск</span> для применения настроек.',
-  'resources.register.install.title': 'Установка GPUStack на {os}',
+  'resources.register.install.title': 'Установка LLMFabric на {os}',
   'resources.register.download':
     'Скачайте и установите <a href={url} target="_blank">инсталлятор</a>. Поддерживаемые версии: {versions}.',
   'resource.register.maos.support': 'Apple Silicon (серия M), macOS 14+',

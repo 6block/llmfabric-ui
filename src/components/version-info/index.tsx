@@ -1,4 +1,4 @@
-import Logo from '@/assets/images/gpustack-logo.png';
+import Logo from '@/assets/images/llmfabric-logo.svg';
 import { GPUStackVersionAtom, UpdateCheckAtom, userAtom } from '@/atoms/user';
 import externalLinks from '@/constants/external-links';
 import { Button } from 'antd';
@@ -62,13 +62,13 @@ const VersionInfo: React.FC<{ intl: any }> = ({ intl }) => {
           <span className="m-l-5">
             {latestVersion && latestVersion !== currentVersion && !isDev
               ? intl.formatMessage(
-                  { id: 'users.version.update' },
-                  { version: latestVersion }
-                )
+                { id: 'users.version.update' },
+                { version: latestVersion }
+              )
               : intl.formatMessage(
-                  { id: 'users.version.islatest' },
-                  { version: currentVersion }
-                )}
+                { id: 'users.version.islatest' },
+                { version: currentVersion }
+              )}
           </span>
           <Button
             type="link"

@@ -17,7 +17,7 @@ export const generateCurlCode = ({
   const curlCode = `
 curl ${host}${api} \\
 -H "Content-Type: multipart/form-data" \\
--H "Authorization: Bearer $\{YOUR_GPUSTACK_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
+-H "Authorization: Bearer $\{YOUR_LLMFABRIC_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
 ${formatCurlArgs(_.omit(parameters, ['mask', 'image']), isFormdata)}`
     .trim()
     .replace(/\\$/, '');
@@ -45,7 +45,7 @@ export const generateCode = ({
 from openai import OpenAI\n
 client = OpenAI(
   base_url="${host}/${OPENAI_COMPATIBLE}", 
-  api_key="YOUR_GPUSTACK_API_KEY"
+  api_key="YOUR_LLMFABRIC_API_KEY"
 )
 
 video = client.videos.create(\n${formatPyParams({ ...parameters })})\n
@@ -60,7 +60,7 @@ print(video.id)`.trim();
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  "apiKey": "YOUR_GPUSTACK_API_KEY",
+  "apiKey": "YOUR_LLMFABRIC_API_KEY",
   "baseURL": "${host}/${OPENAI_COMPATIBLE}"
 });
 

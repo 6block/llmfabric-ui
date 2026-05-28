@@ -272,7 +272,7 @@ export const useCheckCompatibility = () => {
     let compatibilityMessage = compatibility_messages.join(' ');
 
     compatibilityMessage = compatibilityMessage.startsWith(
-      `The model file path you specified does not exist on the GPUStack server. It's recommended`
+      `The model file path you specified does not exist on the LLMFabric server. It's recommended`
     )
       ? intl.formatMessage({ id: 'models.form.modelfile.notfound' })
       : compatibilityMessage;

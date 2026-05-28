@@ -8,14 +8,14 @@ export const generateSpeechToTextCurlCode = ({
   parameters
 }: Record<string, any>) => {
   const host = window.location.origin;
-  // replace url OPENAI_COMPATIBLE with GPUSTACK
+  // replace url OPENAI_COMPATIBLE with LLMFABRIC
   const api = modelProxy ? `${MODEL_PROXY}/\${YOUR_API_PATH}` : url;
 
   // ========================= Curl =========================
   const curlCode = `
 curl ${host}${api} \\
 -H "Content-Type: multipart/form-data" \\
--H "Authorization: Bearer $\{YOUR_GPUSTACK_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
+-H "Authorization: Bearer $\{YOUR_LLMFABRIC_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
 -F model="${parameters.model}" \\
 -F file="@/path/to/file/audio.mp3;type=audio/mpeg" \\
 ${formatCurlArgs(_.omit(parameters, 'model'), true)}`
@@ -40,7 +40,7 @@ from openai import OpenAI\n
 audio_file = open("audio.mp3", "rb")
 client = OpenAI(
   base_url="${host}/${OPENAI_COMPATIBLE}", 
-  api_key="YOUR_GPUSTACK_API_KEY"
+  api_key="YOUR_LLMFABRIC_API_KEY"
 )
 
 response = client.audio.transcriptions.create(\n${formatPyParams({
@@ -63,7 +63,7 @@ const fs = require("fs")
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  "apiKey": "YOUR_GPUSTACK_API_KEY",
+  "apiKey": "YOUR_LLMFABRIC_API_KEY",
   "baseURL": "${host}/${OPENAI_COMPATIBLE}"
 });
 
@@ -94,7 +94,7 @@ export const generateTextToSpeechCurlCode = ({
   const curlCode = `
 curl ${host}${api} \\
 -H "Content-Type: application/json" \\
--H "Authorization: Bearer $\{YOUR_GPUSTACK_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
+-H "Authorization: Bearer $\{YOUR_LLMFABRIC_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
 ${formatCurlArgs(parameters, false)} \\\n--output output.${parameters.response_format}`.trim();
 
   return curlCode;
@@ -116,7 +116,7 @@ from openai import OpenAI\n
 output_file_path = Path(__file__).parent / "output.mp3"
 client = OpenAI(
   base_url="${host}/${OPENAI_COMPATIBLE}", 
-  api_key="YOUR_GPUSTACK_API_KEY"
+  api_key="YOUR_LLMFABRIC_API_KEY"
 )
 
 response = client.audio.speech.create(\n${formatPyParams({ ...parameters })})\n
@@ -139,7 +139,7 @@ const OpenAI = require("openai");
 const ouptFile = path.resolve("./output.mp3");
 
 const openai = new OpenAI({
-  "apiKey": "YOUR_GPUSTACK_API_KEY",
+  "apiKey": "YOUR_LLMFABRIC_API_KEY",
   "baseURL": "${host}/${OPENAI_COMPATIBLE}"
 });
 

@@ -77,7 +77,7 @@ export default {
   'clusters.addworker.detectWorkerAddress.tips':
     'Defaults to Worker IP if not specified.',
   'clusters.addworker.externalIP.tips':
-    'If running in a VPC or private network, please specify the Worker external address reachable by the GPUStack Server.',
+    'If running in a VPC or private network, please specify the Worker external address reachable by the LLMFabric Server.',
   'clusters.addworker.enterWorkerIP': 'Enter worker IP',
   'clusters.addworker.enterWorkerIP.error': 'Please enter the worker IP.',
   'clusters.addworker.enterWorkerAddress': 'Enter worker external address',
@@ -105,18 +105,18 @@ export default {
     '{count} new worker has been added to the cluster.',
   'clusters.addworker.message.success_multiple':
     '{count} new workers have been added to the cluster.',
-  'clusters.create.serverUrl': 'GPUStack Server URL',
+  'clusters.create.serverUrl': 'LLMFabric Server URL',
   'clusters.create.workerConfig': 'Worker Configuration',
   'clusters.addworker.containerName': 'Worker Container Name',
   'clusters.addworker.containerName.tips':
     'Specify a name for the worker container.',
-  'clusters.addworker.dataVolume': 'GPUStack Data Volume',
+  'clusters.addworker.dataVolume': 'LLMFabric Data Volume',
   'clusters.addworker.dataVolume.tips':
-    'Specify a data storage path for GPUStack.',
+    'Specify a data storage path for LLMFabric.',
   'clusters.table.ip.internal': 'Internal',
   'clusters.table.ip.external': 'External',
   'clusters.form.serverUrl.tips':
-    'Specify an externally accessible GPUStack service URL if the worker cannot access GPUStack Server directly.',
+    'Specify an externally accessible LLMFabric service URL if the worker cannot access LLMFabric Server directly.',
   'clusters.form.setDefault': 'Set as Default',
   'clusters.form.setDefault.tips': 'Default for deployment.',
   'clusters.addworker.noClusters': 'No available Docker clusters found',
@@ -134,5 +134,5 @@ export default {
   'clusters.addworker.theadNotes-02':
     'T-Head PPU uses the Container Device Interface (CDI) for device injection and requires the <span class="bold-text">/var/run/cdi</span> directory to be available for CDI generation.',
   'clusters.addworker.nvidiaNotes':
-    'The built-in inference backends in GPUStack v2.1 require <span class="bold-text">CUDA 12.6+</span>. Please ensure your NVIDIA driver version is <span class="bold-text">560</span> or newer.'
+    'The built-in inference backends in LLMFabric v2.1 require <span class="bold-text">CUDA 12.6+</span>. Please ensure your NVIDIA driver version is <span class="bold-text">560</span> or newer.'
 };

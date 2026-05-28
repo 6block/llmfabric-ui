@@ -45,7 +45,7 @@ const SelectVendor: React.FC<AddWorkerStepProps> = ({ disabled }) => {
     updateField('currentGPU', GPUDriverMap.NVIDIA);
     updateField('workerCommand', {
       label: 'NVIDIA',
-      link: 'https://docs.gpustack.ai/latest/installation/requirements/#nvidia-gpu',
+      link: 'https://docs.llmfabric.ai/latest/installation/requirements/#nvidia-gpu',
       notes: AddWorkerDockerNotes[GPUDriverMap.NVIDIA]
     });
   }, []);

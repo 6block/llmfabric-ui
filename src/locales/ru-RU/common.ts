@@ -203,7 +203,7 @@ export default {
   'common.form.password': 'Пароль',
   'common.form.username': 'Имя пользователя',
   'common.login.rember': 'Запомнить меня',
-  'settings.company': 'GPUStack.ai',
+  'settings.company': '6block.ai',
   'common.button.help': 'Помощь',
   'common.button.feedback': 'Обратная связь',
   'common.button.docs': 'Документация',

@@ -75,7 +75,7 @@ export default {
   'clusters.addworker.detectWorkerAddress.tips':
     '如果未指定，则默认为节点 IP。',
   'clusters.addworker.externalIP.tips':
-    '如运行在 VPC 或私有网络时，请指定 GPUStack Server 可达的节点外部地址。',
+    '如运行在 VPC 或私有网络时，请指定 LLMFabric Server 可达的节点外部地址。',
   'clusters.addworker.enterWorkerIP': '输入节点 IP',
   'clusters.addworker.enterWorkerIP.error': '请输入节点 IP',
   'clusters.addworker.enterWorkerAddress': '输入节点外部地址',
@@ -103,16 +103,16 @@ export default {
     '已将 {count} 个新节点添加到集群中。',
   'clusters.addworker.message.success_multiple':
     '已将 {count} 个新节点添加到集群中。',
-  'clusters.create.serverUrl': 'GPUStack Server 节点地址',
+  'clusters.create.serverUrl': 'LLMFabric Server 节点地址',
   'clusters.create.workerConfig': '节点配置',
   'clusters.addworker.containerName': '节点容器名称',
   'clusters.addworker.containerName.tips': '为节点容器指定一个名称。',
-  'clusters.addworker.dataVolume': 'GPUStack 数据卷',
-  'clusters.addworker.dataVolume.tips': '为 GPUStack 指定数据存储路径。',
+  'clusters.addworker.dataVolume': 'LLMFabric 数据卷',
+  'clusters.addworker.dataVolume.tips': '为 LLMFabric 指定数据存储路径。',
   'clusters.table.ip.internal': '内',
   'clusters.table.ip.external': '外',
   'clusters.form.serverUrl.tips':
-    '如果节点无法直接访问 GPUStack Server，则指定一个可访问的外部 GPUStack Server 地址。',
+    '如果节点无法直接访问 LLMFabric Server，则指定一个可访问的外部 LLMFabric Server 地址。',
   'clusters.form.setDefault': '设为默认',
   'clusters.form.setDefault.tips': '部署时的默认集群。',
   'clusters.addworker.noClusters': '无可用的 Docker 集群',
@@ -128,5 +128,5 @@ export default {
   'clusters.addworker.theadNotes-02':
     '平头哥（T-Head）PPU 使用容器设备接口（CDI）进行设备注入，因此需要确保 <span class="bold-text">/var/run/cdi</span> 目录可用以生成 CDI。',
   'clusters.addworker.nvidiaNotes':
-    'GPUStack v2.1 内置推理后端依赖 <span class="bold-text">CUDA 12.6</span> 及以上版本，请确保 NVIDIA 驱动版本为 <span class="bold-text">560</span> 或以上。'
+    'LLMFabric v2.1 内置推理后端依赖 <span class="bold-text">CUDA 12.6</span> 及以上版本，请确保 NVIDIA 驱动版本为 <span class="bold-text">560</span> 或以上。'
 };

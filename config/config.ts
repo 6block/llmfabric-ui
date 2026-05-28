@@ -65,7 +65,7 @@ export default defineConfig({
           monacoPluginConfig(config);
         }
       }),
-  favicons: ['/static/favicon.png'],
+  favicons: ['/static/favicon.svg'],
   jsMinifier: 'terser',
   cssMinifier: 'cssnano',
   presets: ['umi-presets-pro'],

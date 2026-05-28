@@ -13,7 +13,7 @@ export const generateLLmCurlCode = ({
   const curlCode = `
 curl ${host}${api} \\
 -H "Content-Type: application/json" \\
--H "Authorization: Bearer $\{YOUR_GPUSTACK_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
+-H "Authorization: Bearer $\{YOUR_LLMFABRIC_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
 ${formatCurlArgs(parameters, false)}`.trim();
 
   return curlCode;
@@ -33,7 +33,7 @@ export const generateLLMCode = ({
 from openai import OpenAI\n
 client = OpenAI(
   base_url="${host}/${OPENAI_COMPATIBLE}", 
-  api_key="YOUR_GPUSTACK_API_KEY"
+  api_key="YOUR_LLMFABRIC_API_KEY"
 )
 
 response = client.chat.completions.create(\n${formatPyParams({ ...parameters })})\n
@@ -48,7 +48,7 @@ print(response.choices[0].message.content)`.trim();
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  "apiKey": "YOUR_GPUSTACK_API_KEY",
+  "apiKey": "YOUR_LLMFABRIC_API_KEY",
   "baseURL": "${host}/${OPENAI_COMPATIBLE}"
 });
 

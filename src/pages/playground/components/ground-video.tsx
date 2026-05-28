@@ -185,7 +185,7 @@ const GroundVideo: React.FC<MessageProps> = forwardRef((props, ref) => {
                   <Spin spinning={loading}>
                     <video
                       src={videoList[0]?.dataUrl}
-                      poster="https://placehold.co/640x360.png?text=GPUStack"
+                      poster="https://placehold.co/640x360.png?text=LLMFabric"
                       controls
                       disablePictureInPicture
                       style={{

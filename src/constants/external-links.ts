@@ -1,13 +1,13 @@
 const externalLinks = {
-  documentation: 'https://docs.gpustack.ai/',
-  github: 'https://github.com/gpustack/gpustack',
+  documentation: 'https://docs.llmfabric.ai/',
+  github: 'https://github.com/6block/llmfabric',
   discord: 'https://discord.gg/VXYJzuaqwD',
-  site: 'https://gpustack.ai/',
-  release: 'https://github.com/gpustack/gpustack/releases',
-  reportIssue: 'https://github.com/gpustack/gpustack/issues/new/choose',
-  faq: 'https://docs.gpustack.ai/latest/faq/',
+  site: 'https://6block.ai/',
+  release: 'https://github.com/6block/llmfabric/releases',
+  reportIssue: 'https://github.com/6block/llmfabric/issues/new/choose',
+  faq: 'https://docs.llmfabric.ai/latest/faq/',
   resetPassword:
-    'https://docs.gpustack.ai/latest/troubleshooting/?h=reset#reset-admin-password'
+    'https://docs.llmfabric.ai/latest/troubleshooting/?h=reset#reset-admin-password'
 };
 
 export default externalLinks;

@@ -1,0 +1,17 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon: gradient square with white diamond + center gem -->
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#bgGrad)"/>
+  <path d="M24 12L36 24L24 36L12 24Z" fill="#FFFFFF"/>
+  <circle cx="24" cy="24" r="4.5" fill="url(#bgGrad)"/>
+  <!-- Text -->
+  <text x="56" y="32" fill="#4F46E5" font-family="'Inter','SF Pro Display',system-ui,-apple-system,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5">
+    LLM<tspan fill="#0EA5E9">Fabric</tspan>
+  </text>
+  <text x="170" y="32" fill="#6366F1" font-family="'Inter','SF Pro Display',system-ui,sans-serif" font-size="9" font-weight="600" letter-spacing="1.5">6BLOCK</text>
+</svg>

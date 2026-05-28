@@ -14,7 +14,7 @@ export default {
   'models.form.env': '環境変数',
   'models.form.configurations': '設定',
   'models.form.s3address': 'S3アドレス',
-  'models.form.partialoffload.tips': `When CPU offloading is enabled, GPUStack will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
+  'models.form.partialoffload.tips': `When CPU offloading is enabled, LLMFabric will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
   'models.form.distribution.tips':
     'ワーカーのリソースが不足している場合、モデルの一部のレイヤーを単一または複数のリモートワーカーにオフロードすることができます。',
   'models.openinplayground': 'プレイグラウンドで開く',
@@ -25,7 +25,7 @@ export default {
   'model.deploy.sort': '並び替え',
   'model.deploy.search.placeholder': '<kbd>/</kbd>を入力してモデルを検索',
   'model.form.ollamatips':
-    'ヒント: 以下はGPUStackで事前設定されたOllamaモデルです。希望するモデルを選択するか、右側の【{name}】入力ボックスにデプロイしたいモデルを直接入力してください。',
+    'ヒント: 以下はLLMFabricで事前設定されたOllamaモデルです。希望するモデルを選択するか、右側の【{name}】入力ボックスにデプロイしたいモデルを直接入力してください。',
   'models.sort.name': '名前',
   'models.sort.size': 'サイズ',
   'models.sort.likes': 'いいね',
@@ -86,7 +86,7 @@ export default {
   'models.form.filePath': 'モデルパス',
   'models.form.backendVersion': 'バックエンドバージョン',
   'models.form.backendVersion.tips':
-    '希望する{backend}{version}バージョンを使用するには、システムがオンライン環境で対応するバージョンをインストールする仮想環境を自動的に作成します。GPUStackのアップグレード後もバックエンドバージョンは固定されます。{link}',
+    '希望する{backend}{version}バージョンを使用するには、システムがオンライン環境で対応するバージョンをインストールする仮想環境を自動的に作成します。LLMFabricのアップグレード後もバックエンドバージョンは固定されます。{link}',
   'models.form.gpuselector': 'GPUセレクター',
   'models.form.backend.llamabox':
     'GGUF形式のモデル用（Linux、macOS、Windowsをサポート）。',
@@ -166,8 +166,8 @@ export default {
   'models.ollama.deprecated.following':
     '<span class="bold-text">Following the v0.7.0 update,</span> all previously deployed models will continue to work as expected.',
   'models.ollama.deprecated.issue':
-    'See the related issue: <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">#1979 on GitHub</a>.',
-  'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. For more information, see the <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">related GitHub issue</a>.`,
+    'See the related issue: <a href="https://github.com/6block/llmfabric/issues/1979" target="_blank">#1979 on GitHub</a>.',
+  'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. For more information, see the <a href="https://github.com/6block/llmfabric/issues/1979" target="_blank">related GitHub issue</a>.`,
   'models.backend.mindie.310p':
     'Ascend 310P only supports FP16, so you need to set --dtype=float16.',
   'models.form.gpuCount': '各レプリカのGPU数',
@@ -263,7 +263,7 @@ export default {
   'models.form.generic_proxy.button': 'Generic Proxy',
   'models.accessControlModal.includeusers': 'Include Users',
   'models.table.genericProxy':
-    'Use the following path prefix, and set the model name in either the <span class="bold-text">X-GPUStack-Model</span> request header or the model field in the request body. All requests under this path prefix will be forwarded to the inference backend.',
+    'Use the following path prefix, and set the model name in either the <span class="bold-text">X-LLMFabric-Model</span> request header or the model field in the request body. All requests under this path prefix will be forwarded to the inference backend.',
   'models.form.backendVersion.deprecated': 'Deprecated',
   'models.accessSettings.public.desc':
     'Accessible to anyone without authentication.',
@@ -274,7 +274,7 @@ export default {
   'models.form.backendVersions.tips': `To use more versions, go to the {link} page and edit the backend to add versions.`,
   'models.catalog.nogpus.tips':
     'No compatible GPUs are available in the selected cluster for this model.',
-  'models.form.modelfile.notfound': `The model file path you specified does not exist on the GPUStack server. It's recommended to place the model file at the same path on both the GPUStack server and GPUStack workers. This helps GPUStack make better decisions.`,
+  'models.form.modelfile.notfound': `The model file path you specified does not exist on the LLMFabric server. It's recommended to place the model file at the same path on both the LLMFabric server and LLMFabric workers. This helps LLMFabric make better decisions.`,
   'models.form.readyWorkers': 'workers ready',
   'models.form.maxContextLength': 'Maximum Context Length',
   'models.form.backend.helperText':
@@ -284,7 +284,7 @@ export default {
 
 // ========== To-Do: Translate Keys (Remove After Translation) ==========
 // 1. 'models.ollama.deprecated.title': 'Deprecation Notice',
-// 2. 'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. For more information, see the <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">related GitHub issue</a>.`
+// 2. 'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. For more information, see the <a href="https://github.com/6block/llmfabric/issues/1979" target="_blank">related GitHub issue</a>.`
 // 3.  'models.backend.mindie.310p':'Ascend 310P only supports FP16, so you need to set --dtype=float16.',
 // 4.  'models.form.check.clusterUnavailable': 'Current cluster is unavailable',
 // 5. 'models.form.check.otherClustersAvailable': 'Available clusters: {clusters}. Please switch cluster.',
@@ -356,7 +356,7 @@ export default {
 // 54. 'models.form.generic_proxy.tips': 'After enabling the generic proxy, you can access URI paths that do not follow the OpenAI API standard.',
 // 55. 'models.form.generic_proxy.button': 'Generic Proxy',
 // 56. 'models.accessControlModal.includeusers': 'Include Users',
-// 57. 'models.table.genericProxy': 'Use the following path prefix, and set the model name in either the <span class="bold-text">X-GPUStack-Model</span> request header or the model field in the request body. All requests under this path prefix will be forwarded to the inference backend.'
+// 57. 'models.table.genericProxy': 'Use the following path prefix, and set the model name in either the <span class="bold-text">X-LLMFabric-Model</span> request header or the model field in the request body. All requests under this path prefix will be forwarded to the inference backend.'
 // 58. 'models.form.backend.vllm': 'Built-in support for NVIDIA, AMD, Ascend, Hygon, Moore Threads, Iluvatar, MetaX, T-Head PPU devices.',
 // 59. 'models.form.backend.voxbox': 'Only supports NVIDIA GPUs and CPUs.',
 // 60.  models.form.backend.mindie': 'Only supports Ascend NPUs.',
@@ -364,7 +364,7 @@ export default {
 // 62. 'models.form.backend_parameters.vllm.tips': 'For more details about {backend} parameters, see <a href={link} target="_blank">here</a>.',
 // 63. 'models.button.accessSettings.tips': 'Changes to access settings take effect after one minute.',
 // 64.  'models.table.userSelection.tips': 'Admin users can access all models by default.',
-// 65. 'models.form.partialoffload.tips': `When CPU offloading is enabled, GPUStack will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
+// 65. 'models.form.partialoffload.tips': `When CPU offloading is enabled, LLMFabric will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
 // 66. 'models.form.backend.warning': 'The selected backend does not support GGUF models. Please add a backend with GGUF support in the Inference Backend.',
 // 67.  'models.form.backend.warning.gguf': 'Please ensure that the selected custom backend supports GGUF models.',,
 // 68. 'models.form.backendVersion.deprecated': 'Deprecated',
@@ -373,7 +373,7 @@ export default {
 // 71.'models.accessSettings.allowedUsers.tips': 'Only designated users can access the model.',
 // 72. 'models.form.backendVersions.tips': `To use more versions, go to the {link} page and edit the backend to add versions.`,
 // 73. 'models.catalog.nogpus.tips': 'No compatible GPUs are available in the selected cluster for this model.',
-// 74. 'models.form.modelfile.notfound': `The model file path you specified does not exist on the GPUStack server. It's recommended to place the model file at the same path on both the GPUStack server and GPUStack workers. This helps GPUStack make better decisions.`,
+// 74. 'models.form.modelfile.notfound': `The model file path you specified does not exist on the LLMFabric server. It's recommended to place the model file at the same path on both the LLMFabric server and LLMFabric workers. This helps LLMFabric make better decisions.`,
 // 75. 'models.form.readyWorkers': 'workers ready',
 // 76. 'models.form.maxContextLength': 'Maximum Context Length',
 // 77. 'models.form.backend.helperText': 'Not enabled yet. Will be enabled after deployment. ',

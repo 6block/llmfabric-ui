@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <!-- Clean white diamond -->
+  <path d="M32 12L52 32L32 52L12 32Z" fill="#FFFFFF"/>
+  <!-- Gradient center gem -->
+  <circle cx="32" cy="32" r="7" fill="url(#bg)"/>
+</svg>

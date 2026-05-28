@@ -1,0 +1,14 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+  <!-- Gradient background -->
+  <rect width="200" height="200" rx="48" fill="url(#bgGrad)"/>
+  <!-- Clean white diamond (diamond pattern = fabric weave) -->
+  <path d="M100 40L160 100L100 160L40 100Z" fill="#FFFFFF"/>
+  <!-- Gradient center gem -->
+  <circle cx="100" cy="100" r="22" fill="url(#bgGrad)"/>
+</svg>

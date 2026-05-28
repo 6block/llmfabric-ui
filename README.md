@@ -1,6 +1,6 @@
-# GPUStack UI
+# LLMFabric UI
 
-UI for [GPUStack](https://github.com/gpustack/gpustack).
+UI for [LLMFabric](https://github.com/6block/llmfabric).
 
 ## Installation
 
@@ -21,13 +21,13 @@ npm install -g pnpm
 3. Setup
 
 ```
-git clone https://github.com/gpustack/gpustack-ui/
+git clone https://github.com/6block/llmfabric-ui/
 ```
 
 4. Install dependencies
 
 ```
-cd gpustack-ui
+cd llmfabric-ui
 pnpm install
 ```
 
@@ -47,9 +47,9 @@ npm run build
 
 ## Bugs & Issues
 
-- Please submit [bugs and issues](https://github.com/gpustack/gpustack/issues) with a label `ui`
+- Please submit [bugs and issues](https://github.com/6block/llmfabric/issues) with a label `ui`
 
 ## Links
 
-- Official website: https://gpustack.ai/
-- Documents: https://docs.gpustack.ai/latest/overview/
+- Official website: https://6block.ai/
+- Documents: https://docs.llmfabric.ai/latest/overview/

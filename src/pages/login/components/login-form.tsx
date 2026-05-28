@@ -1,4 +1,4 @@
-import LogoIcon from '@/assets/images/gpustack-logo.png';
+import LogoIcon from '@/assets/images/llmfabric-logo.svg';
 import { userAtom } from '@/atoms/user';
 import { useIntl, useModel } from '@umijs/max';
 import { Button, Divider, Form, Spin, message } from 'antd';
@@ -105,7 +105,7 @@ const LoginForm = () => {
           </span>
           <img
             src={LogoIcon}
-            alt="logo"
+            alt="LLMFabric"
             style={{ height: '36px', marginLeft: 10 }}
           />
         </div>

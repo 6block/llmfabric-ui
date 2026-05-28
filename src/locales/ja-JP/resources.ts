@@ -51,7 +51,7 @@ export default {
     'MacOSまたはWindowsはサポートされていません。',
   'resources.worker.current.version': '現在のバージョンは {version} です。',
   'resources.worker.driver.install':
-    '<a href="https://docs.gpustack.ai/latest/installation/installation-requirements/" target="_blank">必要なドライバとライブラリ</a> をGPUStackのインストール前にインストールしてください。',
+    '<a href="https://docs.llmfabric.ai/latest/installation/installation-requirements/" target="_blank">必要なドライバとライブラリ</a> をLLMFabricのインストール前にインストールしてください。',
   'resources.worker.select.command':
     'ラベルを選択してコマンドを生成し、コピーを使用してコマンドをコピーします。',
   'resources.worker.script.install': 'スクリプトインストール',
@@ -88,7 +88,7 @@ export default {
     'Paste the <span class="bold-text">Token</span>.',
   'resources.register.worker.step7':
     'Click <span class="bold-text">Restart</span> to apply the settings.',
-  'resources.register.install.title': 'Install GPUStack on {os}',
+  'resources.register.install.title': 'Install LLMFabric on {os}',
   'resources.register.download':
     'Download and install the <a href={url} target="_blank">installer</a>. Only supported: {versions}.',
   'resource.register.maos.support': 'Apple Silicon (M series), macOS 14+',
@@ -119,7 +119,7 @@ export default {
 // 5. 'resources.register.worker.step5': 'Enter the <span class="bold-text">Server URL</span>: {url}.',
 // 6. 'resources.register.worker.step6': 'Paste the <span class="bold-text">Token</span>.',
 // 7. 'resources.register.worker.step7': 'Click <span class="bold-text">Restart</span> to apply the settings.',
-// 8. 'resources.register.install.title': 'Install GPUStack on {os}',
+// 8. 'resources.register.install.title': 'Install LLMFabric on {os}',
 // 9. 'resources.register.download':'Download and install the <a>installer</a>. Only supported: {versions}.',
 // 10. 'resource.register.maos.support': 'Apple Silicon (M series), macOS 14+',
 // 11. 'resource.register.windows.support': 'win 10, win 11',

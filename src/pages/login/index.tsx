@@ -110,7 +110,7 @@ const Login = () => {
   }, [userInfo]);
 
   useEffect(() => {
-    document.title = 'GPUStack';
+    document.title = 'LLMFabric';
   }, []);
 
   return (

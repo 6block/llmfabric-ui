@@ -167,7 +167,7 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
     {
       key: 'site',
       icon: <HomeOutlined />,
-      label: 'GPUStack',
+      label: 'LLMFabric',
       url: externalLinks.site
     },
     {

@@ -13,7 +13,7 @@ export const generateRerankCurlCode = ({
   const curlCode = `
 curl ${host}${apiUrl} \\
 -H "Content-Type: application/json" \\
--H "Authorization: Bearer $\{YOUR_GPUSTACK_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
+-H "Authorization: Bearer $\{YOUR_LLMFABRIC_API_KEY}" \\${modelProxy ? `\n-H "X-GPUStack-Model: ${parameters.model}" \\` : ''}
 ${formatCurlArgs(parameters, false)}`.trim();
 
   return curlCode;
@@ -34,7 +34,7 @@ import requests\n
 url="${host}${api}"
 headers = {
   "Content-type": "application/json",
-  "Authorization": "Bearer $\{YOUR_GPUSTACK_API_KEY}"
+  "Authorization": "Bearer $\{YOUR_LLMFABRIC_API_KEY}"
 }
 data = ${JSON.stringify(parameters, null, 2)}\n
 response = requests.post(url, headers=headers, json=data)
@@ -47,7 +47,7 @@ const axios = require('axios');
 const url = "${host}${api}";
 const headers = {
   "Content-type": "application/json",
-  "Authorization": "Bearer $\{YOUR_GPUSTACK_API_KEY}"
+  "Authorization": "Bearer $\{YOUR_LLMFABRIC_API_KEY}"
 };
 const data = ${JSON.stringify(parameters, null, 2)};
 

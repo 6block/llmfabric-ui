@@ -68,7 +68,7 @@ const ClusterAdvanceConfig: React.FC<{
               size="small"
               type="link"
               target="_blank"
-              href="https://docs.gpustack.ai/latest/cli-reference/start/#config-file"
+              href="https://docs.llmfabric.ai/latest/cli-reference/start/#config-file"
             >
               {intl.formatMessage({ id: 'playground.audio.enablemic.doc' })}{' '}
               <IconFont

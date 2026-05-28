@@ -205,7 +205,7 @@ export default {
   'common.form.password': 'Password',
   'common.form.username': 'Username',
   'common.login.rember': 'Remember me',
-  'settings.company': 'GPUStack.ai',
+  'settings.company': '6block.ai',
   'common.button.help': 'Help',
   'common.button.feedback': 'Feedback',
   'common.button.docs': 'Documentation',
