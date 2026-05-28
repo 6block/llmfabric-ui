@@ -38,40 +38,40 @@ const SwitchSetting: React.FC<{
   errorMessage,
   onInputChange
 }) => {
-  return (
-    <SwitchWrapper>
-      <ButtonWrapper>
-        <span style={{ color: 'var(--ant-color-text)', fontWeight: 500 }}>
-          <span>{label}</span>
-        </span>
-        {showSwitch && <Switch checked={checked} onChange={onChange}></Switch>}
-      </ButtonWrapper>
-      {tips && (
-        <Typography.Text type="secondary">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: tips
-            }}
-          ></div>
-        </Typography.Text>
-      )}
-      {checked && (
-        <div>
-          <Input
-            style={{ width: '100%' }}
-            value={value}
-            placeholder={placeholder}
-            onChange={(e) => onInputChange?.(e.target.value)}
-          />
-          {errorMessage && (
-            <Typography.Text type="danger">{errorMessage}</Typography.Text>
-          )}
-        </div>
-      )}
-      {extra}
-    </SwitchWrapper>
-  );
-};
+    return (
+      <SwitchWrapper>
+        <ButtonWrapper>
+          <span style={{ color: 'var(--ant-color-text)', fontWeight: 500 }}>
+            <span>{label}</span>
+          </span>
+          {showSwitch && <Switch checked={checked} onChange={onChange}></Switch>}
+        </ButtonWrapper>
+        {tips && (
+          <Typography.Text type="secondary">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: tips
+              }}
+            ></div>
+          </Typography.Text>
+        )}
+        {checked && (
+          <div>
+            <Input
+              style={{ width: '100%' }}
+              value={value}
+              placeholder={placeholder}
+              onChange={(e) => onInputChange?.(e.target.value)}
+            />
+            {errorMessage && (
+              <Typography.Text type="danger">{errorMessage}</Typography.Text>
+            )}
+          </div>
+        )}
+        {extra}
+      </SwitchWrapper>
+    );
+  };
 
 const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
   const intl = useIntl();
@@ -103,12 +103,12 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
 
   const containerNameConfig = summary.get('containerNameConfig') || {
     enable: true,
-    name: 'gpustack-worker'
+    name: 'llmfabric-worker'
   };
 
   const gpustackDataVolumeConfig = summary.get('gpustackDataVolumeConfig') || {
     enable: true,
-    path: 'gpustack-data'
+    path: 'llmfabric-data'
   };
 
   const setWorkerIPConfig = (config: {
@@ -194,12 +194,12 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
 
     updateField('containerNameConfig', {
       enable: true,
-      name: 'gpustack-worker'
+      name: 'llmfabric-worker'
     });
 
     updateField('gpustackDataVolumeConfig', {
       enable: true,
-      path: 'gpustack-data'
+      path: 'llmfabric-data'
     });
 
     updateField('externalWorkerIPConfig', {
@@ -236,11 +236,11 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
               dangerouslySetInnerHTML={{
                 __html: workerIPConfig.enable
                   ? intl.formatMessage({
-                      id: 'clusters.addworker.specifyWorkerIP'
-                    })
+                    id: 'clusters.addworker.specifyWorkerIP'
+                  })
                   : intl.formatMessage({
-                      id: 'clusters.addworker.detectWorkerIP'
-                    })
+                    id: 'clusters.addworker.detectWorkerIP'
+                  })
               }}
             ></span>
           }
@@ -304,11 +304,11 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
               dangerouslySetInnerHTML={{
                 __html: externalWorkerIPConfig.enable
                   ? intl.formatMessage({
-                      id: 'clusters.addworker.specifyWorkerAddress'
-                    })
+                    id: 'clusters.addworker.specifyWorkerAddress'
+                  })
                   : intl.formatMessage({
-                      id: 'clusters.addworker.detectWorkerAddress'
-                    })
+                    id: 'clusters.addworker.detectWorkerAddress'
+                  })
               }}
             ></span>
           }

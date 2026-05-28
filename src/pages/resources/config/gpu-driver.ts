@@ -206,14 +206,14 @@ const generateExtraModelDirArg = (modelDir: string) => {
 };
 
 const setNormalArgs = (params: any) => {
-  return `sudo docker run -d --name ${params.containerName || 'gpustack-worker'} \\
-      -e "GPUSTACK_RUNTIME_DEPLOY_MIRRORED_NAME=${params.containerName || 'gpustack-worker'}" \\
+  return `sudo docker run -d --name ${params.containerName || 'llmfabric-worker'} \\
+      -e "GPUSTACK_RUNTIME_DEPLOY_MIRRORED_NAME=${params.containerName || 'llmfabric-worker'}" \\
       ${generateEnvArgs(params)}
       --restart=unless-stopped \\
       --privileged \\
       --network=host \\
       --volume /var/run/docker.sock:/var/run/docker.sock \\
-      --volume ${params.gpustackDataVolume || 'gpustack-data'}:/var/lib/gpustack \\
+      --volume ${params.gpustackDataVolume || 'llmfabric-data'}:/var/lib/gpustack \\
       ${generateExtraModelDirArg(params.modelDir)}
       ${params.cacheDir ? `--volume ${params.cacheDir}:/var/lib/gpustack/cache \\` : ''}`;
 };
