@@ -418,7 +418,7 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
             {
               id: 'common.help.default'
             },
-            { content: 'gpustack-data' }
+            { content: 'llmfabric-data' }
           )}
           checked={gpustackDataVolumeConfig.enable}
           value={gpustackDataVolumeConfig.path}
@@ -443,7 +443,7 @@ const SpecifyArguments: React.FC<AddWorkerStepProps> = ({ disabled }) => {
             {
               id: 'common.help.default'
             },
-            { content: 'gpustack-worker' }
+            { content: 'llmfabric-worker' }
           )}
           checked={containerNameConfig.enable}
           value={containerNameConfig.name}
