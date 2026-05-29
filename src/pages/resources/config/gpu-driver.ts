@@ -213,9 +213,9 @@ const setNormalArgs = (params: any) => {
       --privileged \\
       --network=host \\
       --volume /var/run/docker.sock:/var/run/docker.sock \\
-      --volume ${params.gpustackDataVolume || 'llmfabric-data'}:/var/lib/gpustack \\
+      --volume ${params.gpustackDataVolume || 'llmfabric-data'}:/var/lib/llmfabric \\
       ${generateExtraModelDirArg(params.modelDir)}
-      ${params.cacheDir ? `--volume ${params.cacheDir}:/var/lib/gpustack/cache \\` : ''}`;
+      ${params.cacheDir ? `--volume ${params.cacheDir}:/var/lib/llmfabric/cache \\` : ''}`;
 };
 
 const setWorkerIPArg = (params: any) => {

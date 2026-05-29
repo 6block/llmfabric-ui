@@ -4,8 +4,8 @@ export const dockerConfig = `# This is a template for worker_config.
  
 # ========= directories ===========
  
-# cache_dir: "/var/lib/gpustack/cache"
-# log_dir: "/var/lib/gpustack/log"
+# cache_dir: "/var/lib/llmfabric/cache"
+# log_dir: "/var/lib/llmfabric/log"
  
 # ========= container & image ===========
  

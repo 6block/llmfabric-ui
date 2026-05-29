@@ -64,7 +64,7 @@ export default {
   'resources.modelfiles.selecttarget': 'ターゲットを選択',
   'resources.modelfiles.form.localdir': 'ローカルディレクトリ',
   'resources.modelfiles.form.localdir.tips':
-    'デフォルトのストレージディレクトリは <span class="desc-block">/var/lib/gpustack/cache</span> または <span class="desc-block">--cache-dir</span>（優先）または <span class="desc-block">--data-dir</span> で指定されたディレクトリです。',
+    'デフォルトのストレージディレクトリは <span class="desc-block">/var/lib/llmfabric/cache</span> または <span class="desc-block">--cache-dir</span>（優先）または <span class="desc-block">--data-dir</span> で指定されたディレクトリです。',
   'resources.modelfiles.retry.download': 'ダウンロードを再試行',
   'resources.modelfiles.storagePath.holder':
     'ダウンロード完了を待っています...',
